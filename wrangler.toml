@@ -1,0 +1,6 @@
+name = "my-rust-app"
+type = "rust"
+zone_id = ""
+private = false
+account_id = "75f4046a20169dc2ff68df64f8a7e2ab"
+route = ""
