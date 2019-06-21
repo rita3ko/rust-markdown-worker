@@ -1,21 +1,8 @@
-# 👷‍♀️🦀🕸️ `rustwasm-worker-template`
+# 👷‍♀️🦀🕸️ Rust Markdown Cloudflare Worker
 
-A template for kick starting a Cloudflare worker project using
-[`wasm-pack`](https://github.com/rustwasm/wasm-pack).
+This is based on the tutorial here: https://workers.cloudflare.com/docs/tutorials/build-a-rustwasm-function/
 
-This template is designed for compiling Rust libraries into WebAssembly and
-publishing the resulting worker to Cloudflare's worker infrastructure.
-
-## 🔋 Batteries Included
-
-* [`wasm-bindgen`](https://github.com/rustwasm/wasm-bindgen) for communicating
-  between WebAssembly and JavaScript.
-* [`console_error_panic_hook`](https://github.com/rustwasm/console_error_panic_hook)
-  for logging panic messages to the developer console.
-* [`wee_alloc`](https://github.com/rustwasm/wee_alloc), an allocator optimized
-  for small code size.
-
-## 🚴 Usage
+Currently running on markdown.rita.workers.dev
 
 ### 🐑 Use `wrangler generate` to Clone this Template
 
@@ -32,8 +19,8 @@ cd wasm-worker
 wasm-pack build
 ```
 
-### 🔬 Test in Headless Browsers with `wasm-pack test`
+### Upload to Workers with `wrangler publish`
 
 ```
-wasm-pack test --headless --firefox
+wrangler publish
 ```
